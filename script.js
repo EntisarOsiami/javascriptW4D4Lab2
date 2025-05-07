@@ -22,5 +22,10 @@ for (let i = 0; i < person.length; i++) {
     let img = document.createElement("img");
     img.width = 100;
     img.src = person[i].img;
+    let name = document.createElement("p");
+    name.textContent = `The user name is ${person[i].name}`;    
     document.body.appendChild(img);
-}
+    document.body.appendChild(name);
+ }
+
+
