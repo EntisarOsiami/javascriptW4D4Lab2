@@ -27,7 +27,12 @@ for (let i = 0; i < person.length; i++) {
     img.width = 100;
     img.src = person[i].img;
     let name = document.createElement("p");
-    name.textContent = `The user name is ${person[i].name} and their age is ${person[i].age}`;        
+    name.textContent = `The user name is ${person[i].name} and their age is ${person[i].age}`; 
+    if (person[i].gender === 'female') {
+        name.style.color = 'pink';
+    } else {
+        name.style.color = 'blue';
+    }
     document.body.appendChild(img);
     document.body.appendChild(name);
  }
